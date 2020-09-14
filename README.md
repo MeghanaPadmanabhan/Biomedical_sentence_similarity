@@ -17,6 +17,12 @@ Applies trasfer learning to obtain sentence level embedding. Obtains respectable
   <br>
   Unsupervised tasks are trained using resources from several sources like wikipedia, web question anser websites. Augmenting this unsupervised task with supervised training using  Stanford Natural Language Inference (SNLI) corpus is shown to improve performance. Several popular datasets are used for further training: MR (movie review dataset), CR (Customer review dataset), SUBJ (subjectivity of sentences from movie reviews), MPQA (news data), TREC (question classification data), SST (Binary phase level sentence classification), STS Benchmark (Semantic textual similarity marked by humans on a task), WEAT (word pairs from psycology literature that is used to characterize model bias). 
   <br>
-  <b> How are the pre-trained models fine-tuned for the sentence similarity task that we have in hand></b>
-  
+  <b> How are the pre-trained models fine-tuned for the sentence similarity task that we have in hand?</b>
+
+<br>
+<b> biosentvec </b>
+<br>
+BioSentVec is a model trained with over 30 million documents from both scholarly articles in PubMed and clinical notes in the MIMICIII Clinical Database. The authors evaluate BioSentVec embeddings in two sentence pair similarity tasks in different biomedical text genres, which is likely suitable to our task.
+
+
   
