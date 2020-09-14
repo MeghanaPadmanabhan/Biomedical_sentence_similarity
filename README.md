@@ -5,7 +5,7 @@ We move from Simpler ideas using already pretrained models to more complex speci
 <br>
 We discuss papers in the chronological order of models tried
 <br>
-<a href='https://arxiv.org/pdf/1803.11175.pdf'>Universal Sentence Encoder</a>
+<a href='https://arxiv.org/pdf/1803.11175.pdf'>Universal Sentence Encoder</a><br>
 Applies trasfer learning to obtain sentence level embedding. Obtains respectable performance with minimal fine-tuning for supervised learning task. The model toolkit consists of two new models that can be used to obtain sentence level encodings, one makes use of transformer models while the other makes use of the Deep Averaging Network (DANs) for the same. The models can generate the sentece embedding directly when an input sentence is given. But when used with a larger model, it can be fine-tuned using gradient-based updates for our specific task. The two encoding architectures, the Transformers and the DANs are discussed in brief:
 <ul>
   <li> <b>Transformer based encoders: </b> This architecture uses context-aware representations of words in a sentence that takes into account both the ordering and identity of other words in a sentence. Each word in a sentence is converted to a fixed-length vecor and the sentence embedding is the element-wise summation of the word vectors in the snetence. The model is trained on multiple downstream tasks (multitask learning), SkipThought like task for unsupervised learning from arbitrary text, conversational input-response task, supervised data classification task. This model performs well on the embedding tasks at the cost of higher compute power, resource and time which scales up with increased sentence length. 
