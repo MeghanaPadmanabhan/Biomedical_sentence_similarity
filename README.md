@@ -19,7 +19,7 @@ Applies trasfer learning to obtain sentence level embedding. Obtains respectable
   <br>
   <b> How are the pre-trained models fine-tuned for the sentence similarity task that we have in hand?</b>
 <b> Results of using the generic sentenve embeddings on biomedical text (without fine-tuning): </b> Check out USE_on_generic_text.ipynb for results. 
-
+<br>
 <br>
 <a href='https://arxiv.org/ftp/arxiv/papers/1810/1810.09302.pdf'> BioSentVec: creating sentence embeddings for biomedical texts </a>
 <br>
