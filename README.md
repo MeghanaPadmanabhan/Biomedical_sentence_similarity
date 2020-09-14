@@ -5,6 +5,7 @@ We move from Simpler ideas using already pretrained models to more complex speci
 <br>
 We discuss papers in the chronological order of models tried
 <br>
+<br>
 <a href='https://arxiv.org/pdf/1803.11175.pdf'>Universal Sentence Encoder</a><br>
 Applies trasfer learning to obtain sentence level embedding. Obtains respectable performance with minimal fine-tuning for supervised learning task. The model toolkit consists of two new models that can be used to obtain sentence level encodings, one makes use of transformer models while the other makes use of the Deep Averaging Network (DANs) for the same. The models can generate the sentece embedding directly when an input sentence is given. But when used with a larger model, it can be fine-tuned using gradient-based updates for our specific task. The two encoding architectures, the Transformers and the DANs are discussed in brief:
 <ul>
