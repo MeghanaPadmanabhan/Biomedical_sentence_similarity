@@ -18,11 +18,13 @@ Applies trasfer learning to obtain sentence level embedding. Obtains respectable
   Unsupervised tasks are trained using resources from several sources like wikipedia, web question anser websites. Augmenting this unsupervised task with supervised training using  Stanford Natural Language Inference (SNLI) corpus is shown to improve performance. Several popular datasets are used for further training: MR (movie review dataset), CR (Customer review dataset), SUBJ (subjectivity of sentences from movie reviews), MPQA (news data), TREC (question classification data), SST (Binary phase level sentence classification), STS Benchmark (Semantic textual similarity marked by humans on a task), WEAT (word pairs from psycology literature that is used to characterize model bias). 
   <br>
   <b> How are the pre-trained models fine-tuned for the sentence similarity task that we have in hand?</b>
+<b> Results of using the generic sentenve embeddings on biomedical text (without fine-tuning): </b> Check out USE_on_generic_text.ipynb for results. 
 
 <br>
-<b> biosentvec </b>
+<a href='https://arxiv.org/ftp/arxiv/papers/1810/1810.09302.pdf'> BioSentVec: creating sentence embeddings for biomedical texts </a>
 <br>
 BioSentVec is a model trained with over 30 million documents from both scholarly articles in PubMed and clinical notes in the MIMICIII Clinical Database. The authors evaluate BioSentVec embeddings in two sentence pair similarity tasks in different biomedical text genres, which is likely suitable to our task.
+The bioSentVec is created using the sent2vec model, which makes use of the model to compute the 700-dimensional sentence embeddings. Evaluation is performed on clinical sentence similarity task, using BIOSSES and MedSTS datasets.
 
 
   
