@@ -28,4 +28,5 @@ BioSentVec is a model trained with over 30 million documents from both scholarly
 The bioSentVec is created using the sent2vec model, which makes use of the model to compute the 700-dimensional sentence embeddings. Evaluation is performed on clinical sentence similarity task, using BIOSSES and MedSTS datasets.
 
 
+
   
